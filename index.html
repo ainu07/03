@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Trabajo Practico N3</title>
     <style>
-        /*Comentario de SCC*/
+        /*Comentario de CSS*/
         /*
         selector {
             propiedad: valor;
@@ -15,19 +16,121 @@
         */
     </style>
 </head>
+
 <body>
-    <h1>TRabajo Practico N 3.</h1>
+    
+    <h1>Trabajo Practico N 3.</h1>
     <h2>Ainara Parra.</h2>
     <!--Pregunta 1-->
     <h3>1.1- ¿Qué significa CSS?</h3>
-    <p>Significa <i>" Hojas de Estilo en Cascada"</i>, en ingles <i>"Cascading Stylesheets"</i>, que hace referencia para describir la presentación semántica (el aspecto y formato) de un documento escrito en lenguaje de marcas.</p>
+    <p>Significa <i>" Hojas de Estilo en Cascada"</i>, en ingles <i>"Cascading Stylesheets"</i>, que hace referencia
+        para describir la presentación semántica (el aspecto y formato) de un documento escrito en lenguaje de marcas.
+    </p>
     <!--Pregunta 2-->
     <h3>1.2- ¿Para qué sirve el CSS? ¿Qué programa se utiliza para interpretar el CSS?</h3>
-    <p>CSS se usa para darle estilo e identidad visualmente al programa, dandole una estatica personalizada a la que se diferencia de una estatica imprenta.</p>
+    <p>CSS se usa para darle estilo e identidad visualmente al programa, dandole una estatica personalizada a la que se
+        diferencia de una estatica imprenta.</p>
     <!--Pregunta 3-->
     <h3>1.3- ¿A qué se llama regla de CSS? </h3>
-    <p>Se llama selector, para darle valor a las etiquetas del html.</p>
-    <!--Pregunnta -->
-    <p></p>
+    <p>Se le llama a la estructura que le las reglas, donde son un conjunto de propiedades y valores que se aplicarán a una o varias etiquetas que según necesitemos.</p>
+    <!--Pregunnta 4-->
+    <h3>1.4- ¿Cuál es la anatomía de la regla de CSS? Agregar imagen explicativa y utilizando una lista descriptiva
+        explicar sus elementos.</h3>
+    <p><img src="https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/CSS_basics/css-declaration-small.png"
+            alt=""><br>
+        La anatomia de esta se compone del <strong>selector</strong>, adentro de las <i>llaves</i> esta el <i>cpnjunto de propiedades
+        </i>, la cul es la<strong>propiedad principal</strong> y la <strong>variable de propiedad</strong>.<br>
+        <ul>
+            <li>Selector.</li>
+            <li>Abrir llave</li>
+            <li>Propiedad.</li>
+            <li>Variable de propiedad.</li>
+            <li>Cerrar llaves.</li>
+        </ul>
+    </p>
+    <!--Pregunta 5-->
+    <h3>1.5- ¿Qué es un selector en CSS?</h3>
+    <p>Esta selecciona los elementos a dar estilo a las etiquetas como h1 o p. Para dar estilo a un elemento diferente a cada uno, solo cambia el selector.</p>
+    <!--Pregunta 6-->
+    <h3>1.6- Identificar y definir los selectores: de ID, de clases, universal, de etiquetas, descendente.</h3>
+    <p><ul>
+        <dt>ID: Este tipo de selector es igual al de clase, aunque lo aplicaremos a un único elemento HTML de nuestra página. Esto se debe a que el atributo ID de HTML identifica a un elemento HTML por medio de un nombre. Para aplicar CSS solamente a ID titulo, tendremos que seleccionar dicho ID utilizar el <i># </i> seguido del nombre.</dt>
+        <dt>Clases: Con este selector seleccionamos un elemento que está dentro de otro del mismo tipo. Estos seectores siempre están formados por dos o más selectores separados entre si.</dt>
+        <dt>Universal:Nos permite aplicar estilos a todos los elementos HTML de un documento y se indica mediante el <i>*</i></dt>
+        <dt>Etiqueta: Es usado simplificado por el <strong>selector</strong>, o más bien, por la <i>p</i>, para elegir una etiqueta en especial, se pone adentro de la <i>p</i></dt>
+        <dt>Descendente: Con este selector seleccionamos un elemento que está dentro de otro del mismo tipo. Estos seectores siempre están formados por dos o más selectores separados entre si. Usando <i>p span</i></dt>
+    </ul></p>
+    <!--Pregunta 7-->
+    <h3>1.7- Explicar brevemente utilizando una lista ordenada: ¿cómo funciona el CSS?</h3>
+    <ol>
+        <li>El navegador carga el HTML.</li>
+        <li>Convierte el HTML en un DOM (Modelo de objetos del documento). El DOM representa el documento en la memoria del ordenador.</li>
+        <li>Entonces, el navegador va a buscar la mayor parte de los recursos vinculados al documento HTML, como las imágenes y los videos incrustado, junto con el CSS vinculado.</li>
+        <li>El navegador analiza el CSS y ordena en diferentes «cubos» las diferentes reglas según el tipo de selector. Para cada tipo de selector que encuentre, calcula qué reglas deben aplicarse y a qué nodos en el DOM se les aplica el estilo según corresponda (este paso intermedio se llama árbol de renderización).</li>
+        <li>El árbol de renderización presenta la estructura en que los nodos deben aparecer después de aplicarle las reglas.</li>
+        <li>En la pantalla se muestra el aspecto visual de la página (esta etapa se llama pintura).</li>
+    </ol>
+    <!--Pregunta 8-->
+    <h3>1.8- ¿Cuáles son las tres formas para vincular CSS con HTML?</h3>
+    <ul>
+        <li>Utilizando la etiqueta <i>style</i> adentro de head</li>
+        <li>Utilizando el atributo de <i>style</i>, que seria el <strong>p</strong>.</li>
+        <li>Un archivo CSS externo vinculado con el html. Los archivos CSS tienen extensión .css. Suelen llamarse estilos.css, style.css. podemos organizar los archivos CSS dentro de una carpeta llamada css. En el head del HTML debemos utilizar la etiqueta <i>link</i>.</li>
+    </ul>
+    <!--Pregunta 9-->
+    <h3>¿Son iguales? ¿Qué es lo distinto? ¿Qué contribuye al cambio de diseño?</h3>
+    <p>Diseño eligido uno: <a href="http://www.csszengarden.com/015/">Diseño uno</a></p>
+    <p>Diseño elegido dos: <a href="http://www.csszengarden.com/219/">Diseño dos</a></p>
+    <p>Si, ambos son iguales. Porque tienen la misma estructura html, pero la estructura de diseño (CSS) es diferente. Lo contribuye el cambio de diseño es la identidad, dando diferentes tipos de personalizacion, temas e interaccion a cada pagina.</p>
+    <h4>ACtividad 2</h4>
+    <!--Pregunta 1-->
+    <h3>Completar la columna de <strong>valores posibles</strong> para cada propiedad.</h3>
+    <dl>
+        <dt><strong>Color</strong>
+        <dt><i>Valor</i></dt>
+        <dd>Colores RGB y HSL</dd>
+        </dt>
+        <dt><strong>Background-color</strong>
+        <dt><i>Valor</i></dt>
+        <dd>Colores RGB Y HSL</dd>
+        </dt>
+        <dt><strong>Font-size</strong>
+        <dt><i>Valor</i></dt>
+        <dd>0.5 em o 12px</dd>
+        </dt>
+        <dt><strong>Font-weight</strong>
+        <dt><i>Valor</i></dt>
+        <dd>Ante 100 o mas largo.</dd>
+        </dt>
+        <dt><strong>Font-style</strong>
+        <dt><i>Valor</i></dt>
+        <dd>Letra en cursiva o negra por completo</dd>
+        </dt>
+        <dt><strong>Font-family</strong>
+        <dt><i>Valor</i></dt>
+        <dd>Estilo Comic-Sans, Victoriano o algun otro.</dd>
+        </dt>
+        <dt><strong>Text-align</strong>
+        <dt><i>Valor</i></dt>
+        <dd>Posicion del texto, titulo o subtitulo; izquierda, derecha, al centro.</dd>
+        </dt>
+        <dt><strong>Text-decoration</strong>
+        <dt><i>Valor.</i></dt>
+        <dd>Decora todo el texto, subrayandolo o si lo tacha.</dd>
+        </dt>
+        <dt><strong>Text-transform.</strong>
+        <dt><i>Valor.</i></dt>
+        <dd>Transforma el texto por mayusculas o minusculas</dd>
+        </dt>
+        <dt><strong>Letter-spacing</strong>
+        <dt><i>Valor</i></dt>
+        <dd>Determina el espacio entre las letras. 0cm o 0cap </dd>
+        </dt>
+        <dt><strong>Line-height.</strong>
+        <dt>Valor</dt>
+        <dd>Define la altura de línea del texto. Por 0ch 0cap.</dd>
+        </dt>
+    </dl>
+    <h3></h3>
 </body>
 </html>
